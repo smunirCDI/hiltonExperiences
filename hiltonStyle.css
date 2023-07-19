@@ -1,0 +1,50 @@
+body{
+}
+.SmallCard2 {
+    position: relative;
+    height: 350px;
+}
+.SmallCard .SmallCard__image2{
+    height: 100%;
+    transition: .3s ease all;
+}
+.smallCard__Content2{
+    position: absolute;
+    bottom: 21px;
+    right: 10px;
+    color: white;
+    left: 21px;
+    width: 90%;
+}
+.contentBtn{
+    width: 100px;
+}
+.contentBtn .BlueButton{
+    padding: 10px
+}
+.contentTitle{
+    margin-bottom: 5px;
+}
+
+.fade-in-text {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+.fade-out-text {
+    animation: fadeOut 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
