@@ -36,6 +36,8 @@
         <link rel="stylesheet" type="text/css" href="https://vafloc01.s3.amazonaws.com/WBStatic/site1101240/public/css/style.css?v=104">
         <link rel="stylesheet" type="text/css" href="./hiltonStyle.css">
 
+
+
         <script>
         var selectedLang = "en_US";
         var padDates = true;
@@ -54,6 +56,11 @@
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+
 
     </head>
 
@@ -61,9 +68,31 @@
         
         <section class="FeaturedCardGrid">
             <div class="FeaturedCardGrid__Top">
-                <h3 class="FeaturedCardGrid__h3">Bundles</h3>
+                <h3 class="FeaturedCardGrid__h3">Bundles Example 1</h3>
             </div>
-            <div class="SmallCardGrid__Column" id="auctionObjts">
+            <div class="SmallCardGrid__Column autoplay" id="auctionObjts">
+                <a class="SmallCard SmallCard2" href="/a-colorful-evening-of-art-and-music-with-grouplove/isynmv1/aucd/4578419"  onmouseover="changeImage()" onmouseout="stopImageChange()">
+                    <div class="SmallCard__image SmallCard__image2" id="imageChangeTest"  style="background-image: linear-gradient(to bottom, rgb(245 246 252 / 0%), rgb(0 0 0 / 81%)), url(https://d22x6w192ywhw7.cloudfront.net/isyn/images/f471/img-3947471-m.jpg);  background-size: cover; background-position: center center;"></div>
+                    <div class="SmallCard__Content smallCard__Content2">
+                        <div class="contentTitle">
+                            <h3 class="SmallCard__Content__h3">A Colorful Evening of Art and Music with Grouplove</h3>
+                        </div>
+                        <div class="contentBtn">
+                            <object class="SmallCard__Content__Buttons__Points__Button__Container">
+                                <a class="BlueButton product-link" data-title='A Colorful Evening of Art and Music with Grouplove' data-id='4578419' data-price='100000.0' data-listName='indexFeatured-en_US' href="/a-colorful-evening-of-art-and-music-with-grouplove/isynmv1/aucd/4578419">
+                                <div> <p>Bid</p></div></a>
+                            </object>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+        </section>
+        <section class="FeaturedCardGrid mt-5">
+            <div class="FeaturedCardGrid__Top">
+                <h3 class="FeaturedCardGrid__h3">Bundles Example 2</h3>
+            </div>
+            <div class="SmallCardGrid__Column" id="auctionObjts2">
                 <a class="SmallCard SmallCard2" href="/a-colorful-evening-of-art-and-music-with-grouplove/isynmv1/aucd/4578419"  onmouseover="changeImage()" onmouseout="stopImageChange()">
                     <div class="SmallCard__image SmallCard__image2" id="imageChangeTest"  style="background-image: linear-gradient(to bottom, rgb(245 246 252 / 0%), rgb(0 0 0 / 81%)), url(https://d22x6w192ywhw7.cloudfront.net/isyn/images/f471/img-3947471-m.jpg);  background-size: cover; background-position: center center;"></div>
                     <div class="SmallCard__Content smallCard__Content2">
@@ -963,6 +992,57 @@
         <script type="text/javascript" charset="utf-8">
             let auctionObjs=[
                 {
+                    title: 'An Exclusive Golf Experience with Annika Sörenstam',
+                    images: [
+                        "https://d22x6w192ywhw7.cloudfront.net/isyn/images/f875/img-3955875-f.jpg",
+                        "https://golfdigest.sports.sndimg.com/content/dam/images/golfdigest/fullset/2022/9/annika-sorenstam-dow-lakes-2022.jpg.rend.hgtvcom.966.644.suffix/1663075903685.jpeg",
+                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLy--uOLoV81mIexwoR-3gGtmqSWDHXT6XEDXsxJveyi3znAQ4DTNJIA8BZCEb1sLHk0E&usqp=CAU",
+                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGBjKjVCNVPWZJk9VJ34tNTunhpqcaf2YlChimziKzDG_CjjS_ZBxNR0i7Sr1hp411Q_0&usqp=CAU"
+                    ],
+                    isImageHoverOn: false
+
+                },
+                {
+                    title: 'Enjoy a Happy Hour with Snooki',
+                    images: [
+                        "https://d22x6w192ywhw7.cloudfront.net/isyn/images/f586/img-3958586-f.jpg",
+                        "https://townsquare.media/site/385/files/2020/08/GettyImages-1020457904.jpg"
+                    ],
+                    isImageHoverOn: false
+                },
+                {
+                    title: 'The Ultimate Young The Giant Experience',
+                    images: [
+                        "https://d22x6w192ywhw7.cloudfront.net/isyn/images/f265/img-3966265-f.jpg",
+                        "https://www.cleveland.com/resizer/IooZ-oo7xXYikZxBVGJyAaLU-24=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/QOFVAQQ4YBCTJCPFJJFKB53L7I.jpg",
+                        "https://beardedgentlemenmusic.com/wp-content/uploads/2014/02/Young-the-Giant-2014.jpg"
+                    ],
+                    isImageHoverOn: false
+
+                },         
+                {
+                    title: 'Meet 5 Seconds of Summer Backstage',
+                    images: [
+                        "https://upload.wikimedia.org/wikipedia/commons/d/de/5sos-NZ4A4323.jpg",
+                        "https://people.com/thmb/dbtqH3DElX20_RMZoF2NE4lSgWc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(511x0:513x2)/5-seconds-1024-1-be52569af9194fa5a1420b1429d60edb.jpg",
+                        "https://cdn.justjaredjr.com/wp-content/uploads/headlines/2022/05/5-seconds-of-summer-premiere-new-song-me-myself-i-from-upcoming-album.jpg"
+                    ],
+                    isImageHoverOn: false
+                },
+                {
+                    title: 'lorem Ipsum',
+                    images: [
+                        "https://d22x6w192ywhw7.cloudfront.net/isyn/images/f471/img-3947471-m.jpg",
+                        "https://www.telegraph.co.uk/content/dam/football/2023/04/19/TELEMMGLPICT000332540722_trans_NvBQzQNjv4BqedkAEilW4a0ZEdF_CvTIr-il7a1KV2STY3xRqqFt_No.jpeg?imwidth=1280",
+                        "https://static.standard.co.uk/2021/08/04/20/newFile-1.jpg?width=968&auto=webp&quality=50&crop=968%3A645%2Csmart",
+                        "https://img.chelseafc.com/image/upload/f_auto,w_1440,c_fill,g_faces,q_90/editorial/match-reports/2022-23/west%20ham%20home/Havertz_celeb_WHU_H_GettyImages-1420514290.jpg"
+                    ],
+                    isImageHoverOn: false
+
+                }
+            ]
+            let auctionObjs2=[
+                {
                     title: 'lorem Ipsum',
                     images: [
                         "https://d22x6w192ywhw7.cloudfront.net/isyn/images/f471/img-3947471-m.jpg",
@@ -989,6 +1069,26 @@
                         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlVvGKBxVUsJfs2vWhPbCEdUpxqld6PvteqZyGky94p5Tw-m3lPI8uO_OeawlFuwOqJog&usqp=CAU",
                         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvPxq3I8J4AfPFlOwYxtdjejqS6bMIPF5hRUZGBRiBdhr79BAYpw04ERh0TotZCO1hIvA&usqp=CAU",
                         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLzutFbdpFsQZFaAu1c1K5PnZ-gSXg6Kp4LwO4CqTLv651uxqnAtS1sN-S66A-OxHHzyc&usqp=CAU"
+                    ],
+                    isImageHoverOn: false
+
+                },         
+                {
+                    title: 'Meet 5 Seconds of Summer Backstage',
+                    images: [
+                        "https://upload.wikimedia.org/wikipedia/commons/d/de/5sos-NZ4A4323.jpg",
+                        "https://people.com/thmb/dbtqH3DElX20_RMZoF2NE4lSgWc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(511x0:513x2)/5-seconds-1024-1-be52569af9194fa5a1420b1429d60edb.jpg",
+                        "https://cdn.justjaredjr.com/wp-content/uploads/headlines/2022/05/5-seconds-of-summer-premiere-new-song-me-myself-i-from-upcoming-album.jpg"
+                    ],
+                    isImageHoverOn: false
+                },
+                {
+                    title: 'lorem Ipsum',
+                    images: [
+                        "https://d22x6w192ywhw7.cloudfront.net/isyn/images/f471/img-3947471-m.jpg",
+                        "https://www.telegraph.co.uk/content/dam/football/2023/04/19/TELEMMGLPICT000332540722_trans_NvBQzQNjv4BqedkAEilW4a0ZEdF_CvTIr-il7a1KV2STY3xRqqFt_No.jpeg?imwidth=1280",
+                        "https://static.standard.co.uk/2021/08/04/20/newFile-1.jpg?width=968&auto=webp&quality=50&crop=968%3A645%2Csmart",
+                        "https://img.chelseafc.com/image/upload/f_auto,w_1440,c_fill,g_faces,q_90/editorial/match-reports/2022-23/west%20ham%20home/Havertz_celeb_WHU_H_GettyImages-1420514290.jpg"
                     ],
                     isImageHoverOn: false
 
@@ -1033,86 +1133,140 @@
                 // image.src = images[0]
                 image.style.backgroundImage  = `linear-gradient(to bottom, rgb(245 246 252 / 0%), rgb(0 0 0 / 81%)), url(${images[0]})`
             }
-            // jQuery( document ).ready(function() {
-            //     jsEnableAuctionUpdates('Item1;Item2;Item3;Item4;Item5;', 'https://auction-hiltonpointsstg1.c1.vigoratedeals.com', 20000, 180, jsDefaultProcessAuctionUpdates, jsDefaultProcessAuctionTick);
-            // });
-            // jQuery('#my-custom-close,#my-custom-close2').click(function(){
-            //     //This will close popup dialog opened using jQuery.magnificPopup.open()
-            //     jQuery.magnificPopup.close();
-            // });
-            // jQuery('.refresh-page').click(function() {
-            // location.reload();
-            // });
+
+
+            function placeAuctionObject( id, secondId, ele, idx, objType ){
+                console.log(id, secondId, ele, idx)
+                $( `#${id}` ).append(`
+                    <a class="SmallCard SmallCard2" href="#" onmouseover="changeImage2('${idx}','${objType}')" onmouseout="stopImageChange2('${idx}','${objType}')">
+                        <div class="SmallCard__image SmallCard__image2" id="${secondId}${idx}"  style="background-image: linear-gradient(to bottom, rgb(245 246 252 / 0%), rgb(0 0 0 / 81%)), url(${ele.images[0]});  background-size: cover; background-position: center center;"></div>
+                        <div class="SmallCard__Content smallCard__Content2">
+                            <div class="contentTitle">
+                                <h3 class="SmallCard__Content__h3">${ele.title}</h3>
+                                <p style="color: #cfcccc;" >${ele.images.length} experiences</p>
+                            </div>
+                            <div class="contentBtn">
+                                <object class="SmallCard__Content__Buttons__Points__Button__Container">
+                                    <a class="BlueButton product-link" data-title='${ele.title}' data-id='4578419' data-price='100000.0' data-listName='indexFeatured-en_US' href="#">
+                                    <div><p>View All Experiences</p></div></a>
+                                </object>
+                            </div>
+                        </div>
+                    </a>
+                    `)
+            }
 
             $( document ).ready(function() {
                 console.log('something?')
                 $( "#auctionObjts" ).html("");
+                $( "#auctionObjts2" ).html("");
                 auctionObjs.forEach((ele,idx) => {
-                    console.log(ele.images)
-                    $( "#auctionObjts" ).append(`
-                        <a class="SmallCard SmallCard2" href="#" onmouseover="changeImage2('${idx}')" onmouseout="stopImageChange2('${idx}')">
-                            <div class="SmallCard__image SmallCard__image2" id="imageChangeTest${idx}"  style="background-image: linear-gradient(to bottom, rgb(245 246 252 / 0%), rgb(0 0 0 / 81%)), url(${ele.images[0]});  background-size: cover; background-position: center center;"></div>
-                            <div class="SmallCard__Content smallCard__Content2">
-                                <div class="contentTitle">
-                                    <h3 class="SmallCard__Content__h3">${ele.title}</h3>
-                                </div>
-                                <div class="contentBtn">
-                                    <object class="SmallCard__Content__Buttons__Points__Button__Container">
-                                        <a class="BlueButton product-link" data-title='${ele.title}' data-id='4578419' data-price='100000.0' data-listName='indexFeatured-en_US' href="#">
-                                        <div> <p>Bid</p></div></a>
-                                    </object>
-                                </div>
-                            </div>
-                        </a>
-                        `)
-                });
 
+                    placeAuctionObject( "auctionObjts", "imageChangeTest", ele, idx, "obj1" )
+                
+                });
+                auctionObjs2.forEach((ele,idx) => {
+                // console.log(ele.images)
+                    placeAuctionObject( "auctionObjts2", "imageChange2", ele, idx, "obj2" )
+                
+                });
+                $('.autoplay').slick({
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                });
             // Handler for .ready() called.
             })
             let imageHoverOn2 = false
-            function changeImage2(id){
+            function changeImage2(id, type){
                 console.log('hello?')
                 // console.log('arr?', arr)
                 console.log('id?', id)
                 console.log(auctionObjs[id].images)
-                let imageArr = auctionObjs[id].images
-
-                let x = 1
-                $(`#imageChangeTest${id}`).css("background-image", `linear-gradient(to bottom, rgb(245 246 252 / 0%), rgb(0 0 0 / 81%)), url('${imageArr[x]}')`);
-                x = 2
-                
-                // image.style.backgroundImage  = `linear-gradient(to bottom, rgb(245 246 252 / 0%), rgb(0 0 0 / 81%)), url('${images[x]}')`
-
-                auctionObjs[id].isImageHoverOn = true
-
-                imageHoverOn2 = true
-                let intervalTest = setInterval(() => {
-                    if (auctionObjs[id].isImageHoverOn) {
-                        if (x < imageArr.length) {
-                            console.log(images[x])
-                            $(`#imageChangeTest${id}`).css("background-image", `linear-gradient(to bottom, rgb(245 246 252 / 0%), rgb(0 0 0 / 81%)), url('${imageArr[x]}')`);
-                            // image.style.backgroundImage  = `linear-gradient(to bottom, rgb(245 246 252 / 0%), rgb(0 0 0 / 81%)), url('${images[x]}')`
-                            console.log(x)
-                            x=x+1
+                if (type == "obj1" ) {
+                    
+                    let imageArr = auctionObjs[id].images
+    
+                    let x = 1
+                    $(`#imageChangeTest${id}`).css("background-image", `linear-gradient(to bottom, rgb(245 246 252 / 0%), rgb(0 0 0 / 81%)), url('${imageArr[x]}')`);
+                    x = 2
+                    
+                    // image.style.backgroundImage  = `linear-gradient(to bottom, rgb(245 246 252 / 0%), rgb(0 0 0 / 81%)), url('${images[x]}')`
+    
+                    auctionObjs[id].isImageHoverOn = true
+    
+                    imageHoverOn2 = true
+                    let intervalTest = setInterval(() => {
+                        if (auctionObjs[id].isImageHoverOn) {
+                            if (x < imageArr.length) {
+                                console.log(images[x])
+                                $(`#imageChangeTest${id}`).css("background-image", `linear-gradient(to bottom, rgb(245 246 252 / 0%), rgb(0 0 0 / 81%)), url('${imageArr[x]}')`);
+                                // image.style.backgroundImage  = `linear-gradient(to bottom, rgb(245 246 252 / 0%), rgb(0 0 0 / 81%)), url('${images[x]}')`
+                                console.log(x)
+                                x=x+1
+                            } else {
+                                // clearTimeout(intervalTest);
+                                x=0
+                            }
                         } else {
-                            // clearTimeout(intervalTest);
-                            x=0
+                            clearTimeout(intervalTest);
                         }
+                        }, 1000);
                     } else {
-                        clearTimeout(intervalTest);
-                    }
-                    }, 1000);
+
+
+                    let imageArr = auctionObjs2[id].images
+    
+                    let x = 1
+                    $(`#imageChange2${id}`).css("background-image", `linear-gradient(to bottom, rgb(245 246 252 / 0%), rgb(0 0 0 / 81%)), url('${imageArr[x]}')`);
+                    x = 2
+                    
+                    // image.style.backgroundImage  = `linear-gradient(to bottom, rgb(245 246 252 / 0%), rgb(0 0 0 / 81%)), url('${images[x]}')`
+    
+                    auctionObjs2[id].isImageHoverOn = true
+    
+                    imageHoverOn2 = true
+                    let intervalTest = setInterval(() => {
+                        if (auctionObjs2[id].isImageHoverOn) {
+                            if (x < imageArr.length) {
+                                
+                                $(`#imageChange2${id}`).css("background-image", `linear-gradient(to bottom, rgb(245 246 252 / 0%), rgb(0 0 0 / 81%)), url('${imageArr[x]}')`);
+                                // image.style.backgroundImage  = `linear-gradient(to bottom, rgb(245 246 252 / 0%), rgb(0 0 0 / 81%)), url('${images[x]}')`
+                                console.log(x)
+                                x=x+1
+                            } else {
+                                // clearTimeout(intervalTest);
+                                x=0
+                            }
+                        } else {
+                            clearTimeout(intervalTest);
+                        }
+                        }, 1000);
+                    
+                }
                     // intervalTest()
             }
-            function stopImageChange2(id){
+            function stopImageChange2(id, type){
                 // imageHoverOn2 = fa
-                auctionObjs[id].isImageHoverOn = false
-                
-                console.log(images[0])
-                let imageArr = auctionObjs[id].images
 
+                if (type == "obj1" ) {
 
-                $(`#imageChangeTest${id}`).css("background-image", `linear-gradient(to bottom, rgb(245 246 252 / 0%), rgb(0 0 0 / 81%)), url('${imageArr[0]}')`);
+                    auctionObjs[id].isImageHoverOn = false
+                    
+                    // console.log(images[0])
+                    let imageArr = auctionObjs[id].images
+                    $(`#imageChangeTest${id}`).css("background-image", `linear-gradient(to bottom, rgb(245 246 252 / 0%), rgb(0 0 0 / 81%)), url('${imageArr[0]}')`);
+                }else{
+                    auctionObjs2[id].isImageHoverOn = false
+                    
+                    // console.log(images[0])
+                    let imageArr = auctionObjs2[id].images
+    
+    
+                    $(`#imageChange2${id}`).css("background-image", `linear-gradient(to bottom, rgb(245 246 252 / 0%), rgb(0 0 0 / 81%)), url('${imageArr[0]}')`);
+
+                }
 
                 // image.src = images[0]
                 // image.style.backgroundImage  = `linear-gradient(to bottom, rgb(245 246 252 / 0%), rgb(0 0 0 / 81%)), url(${images[0]})`
