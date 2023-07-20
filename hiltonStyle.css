@@ -1,5 +1,18 @@
 body{
 }
+/* .SmallCard{
+    width: calc(33.3% - 25px) !important;
+} */
+.slick-track{
+    height: 350px !important;
+}
+.slick-next:before, .slick-prev:before {
+
+    color: #009cde !important;
+}
+.SmallCard__image{
+width: 100%;
+}
 .SmallCard2 {
     position: relative;
     height: 350px;
@@ -17,7 +30,7 @@ body{
     width: 90%;
 }
 .contentBtn{
-    width: 100px;
+    width: 150px;
 }
 .contentBtn .BlueButton{
     padding: 10px
